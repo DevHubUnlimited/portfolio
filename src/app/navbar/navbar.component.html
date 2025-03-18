@@ -1,0 +1,33 @@
+<section>
+    <div class="container main">
+        <div class="row justify-content-between">
+            <div class="col">
+                <a class="navbar-brand" routerLink="/home"><img src="./assets/logo.png" alt="logo image" height="60px" width="60px"/></a>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <div class="social-media">
+                    <p class="mb-0 d-flex">
+                        <a href="https://github.com/DevHubUnlimited" class="d-flex align-items-center justify-content-center"><span class="fa fa-github"><i class="sr-only">Gmail</i></span></a>
+                        <a href="https://www.linkedin.com/in/nkululeko-mkhwanazi-9329a32a2" class="d-flex align-items-center justify-content-center"><span class="fa fa-linkedin"><i class="sr-only">LinkedIn</i></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" [ngClass]="{'active': activeTab === 'home'}" (click)="setActiveTab('home')"><a routerLink="/home" class="nav-link">Home</a></li>
+                    <li class="nav-item" [ngClass]="{'active': activeTab === 'projects'}" (click)="setActiveTab('projects')"><a routerLink="/projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="./assets/Nkululeko_Mkhwanazi_Curriculum Vitae.pdf" class="nav-link">Resume</a></li>
+                    <li class="nav-item" [ngClass]="{'active': activeTab === 'contact'}" (click)="setActiveTab('contact')"><a routerLink="/contact" class="nav-link">Get in touch</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+</section>
+
